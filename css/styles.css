@@ -249,6 +249,7 @@ nav h1 a {
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
+  
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -293,6 +294,11 @@ nav h1 a {
   #restaurants-list {
     flex-direction: column;
   }
+  #restaurant-container, #reviews-container {
+    width: 10%;
+    padding: 0 30px 20px 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
