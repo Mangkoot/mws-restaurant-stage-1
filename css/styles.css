@@ -285,6 +285,7 @@ nav h1 a {
   color: #666;
 }
 
+
 @media screen and (max-width: 576px) {
   .filter-options {
     display: flex;
@@ -331,9 +332,6 @@ nav h1 a {
   }
   #reviews-list li {
     padding: 1em;
-  }
-  #footer {
-    
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
