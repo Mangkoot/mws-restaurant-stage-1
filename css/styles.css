@@ -47,7 +47,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  min-width: -webkit-fill-available;
 }
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
@@ -295,10 +297,10 @@ nav h1 a {
     flex-direction: column;
   }
   #restaurant-container, #reviews-container {
-    width: 10%;
-    padding: 0 30px 20px 30px;
-    margin: 0 auto;
-    text-align: center;
+    width: 41%;
+  }
+  #reviews-list li {
+    padding: 1em;
   }
 }
 
@@ -309,22 +311,37 @@ nav h1 a {
     #restaurants-list {
     flex-direction: column;
   }
+    #restaurant-container, #reviews-container {
+    width: 41%;
+  }
+    #reviews-list li {
+      padding: 1em;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   #restaurants-list {
     flex-wrap: wrap;
-    }
+  }
   #restaurants-list li {
-      width: 38%;
-    }
+    width: 38%;
+  }
+  #restaurant-container, #reviews-container {
+    width: 41%;
+  }
+  #reviews-list li {
+    padding: 1em;
+  }
+  #footer {
+    
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   #restaurants-list {
-    flex-wrap: wrap;
+      flex-wrap: wrap;
   }
   #restaurants-list li {
-      width: 26%;
+        width: 26%;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -335,7 +352,7 @@ nav h1 a {
     width: 1500px;
     margin-right: auto;
     margin-left: auto;
-}
+  }
 #restaurants-list li {
       width: 27%;
   }
